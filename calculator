@@ -1,0 +1,37 @@
+def add(x, y):
+    return x + y
+
+
+def subtract(x, y):
+    return x - y
+
+
+def multiply(x, y):
+    return x * y
+
+
+def divide(x, y):
+    return x / y
+
+
+while True:
+    operation = input("add, subtract, multiply, divide")
+
+    if operation in ('add', 'subtract', 'multiply', 'divide'):
+        number1 = float(input("Enter the first number: "))
+        number2 = float(input("Enter the second number: "))
+
+        if operation is add:
+            print(num1, "+", num2, "=", add(num1, num2))
+
+        elif operation is subtract:
+            print(num1, "-", num2, "=", subtract(num1, num2))
+
+        elif operation is multiply:
+            print(num1, "*", num2, "=", multiply(num1, num2))
+
+        elif operation is divide:
+            print(num1, "/", num2, "=", divide(num1, num2))
+
+    else:
+        print("Invalid input")
